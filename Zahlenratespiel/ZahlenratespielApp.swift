@@ -11,7 +11,7 @@ import SwiftUI
 struct ZahlenratespielApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartMenuView()
         }
     }
 }
