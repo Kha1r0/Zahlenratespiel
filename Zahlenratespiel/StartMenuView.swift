@@ -9,14 +9,17 @@ import SwiftUI
 
 struct StartMenuView: View 
 {
-    var body: some View 
+    // get light/dark Mode
+    @Environment(\.colorScheme) var colorScheme
+    
+    var body: some View
     {
         NavigationView 
         {
             // VERTICAL LAYOUT
             VStack {
                 // Game dice picture
-                Image("Zahlenratespiel")
+                Image(colorScheme == .dark ? "Zahlenratespiel_d" : "Zahlenratespiel")
                     .resizable()
                     .scaledToFit()
                 
