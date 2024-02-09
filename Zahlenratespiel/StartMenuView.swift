@@ -63,7 +63,21 @@ struct Buttons: View {
             }
             
             // About Me Button
-            // Forward to GitHub?
+            Link(destination: URL(string: "https://github.com/kha1r0")!, label: {
+                VStack {
+                    Image(systemName: "person.crop.circle.fill")
+                        .font(.largeTitle)
+                        .imageScale(.large)
+                        .foregroundColor(.gray)
+                    Text("About Me")
+                        .foregroundColor(.gray)
+                        .font(.title)
+                }
+            })
+            
+            /* old about me button versions
+            
+            // About Me (NavigationLink Version)
             NavigationLink(destination: AboutMeView()) {
                 VStack {
                     Image(systemName: "person.crop.circle.fill")
@@ -74,7 +88,23 @@ struct Buttons: View {
                         .foregroundColor(.gray)
                         .font(.title)
                 }
+            } 
+            
+            // About Me (Button Version)
+            Button(action: {
+                forwardToGitHub()
+            }) {
+                VStack {
+                    Image(systemName: "person.crop.circle.fill")
+                        .font(.largeTitle)
+                        .imageScale(.large)
+                        .foregroundColor(.gray)
+                    Text("About Me")
+                        .foregroundColor(.gray)
+                        .font(.title)
+                }
             }
+            */
             
         }//.navigationTitle("Hauptmenü")
     }
