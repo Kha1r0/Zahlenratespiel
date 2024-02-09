@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SafariServices
 
 struct StartMenuView: View 
 {
@@ -63,36 +64,20 @@ struct Buttons: View {
             }
             
             // About Me Button
-            Link(destination: URL(string: "https://github.com/kha1r0")!, label: {
-                VStack {
-                    Image(systemName: "person.crop.circle.fill")
-                        .font(.largeTitle)
-                        .imageScale(.large)
-                        .foregroundColor(.gray)
-                    Text("About Me")
-                        .foregroundColor(.gray)
-                        .font(.title)
-                }
-            })
-            
-            /* old about me button versions
-            
-            // About Me (NavigationLink Version)
-            NavigationLink(destination: AboutMeView()) {
-                VStack {
-                    Image(systemName: "person.crop.circle.fill")
-                        .font(.largeTitle)
-                        .imageScale(.large)
-                        .foregroundColor(.gray)
-                    Text("About Me")
-                        .foregroundColor(.gray)
-                        .font(.title)
-                }
-            } 
-            
-            // About Me (Button Version)
             Button(action: {
-                forwardToGitHub()
+                // if url is a valid url
+                if let url = URL(string: "https://www.github.com/kha1r0" ) {
+                    // make a safariViewController with the URL
+                    let safariVC = SFSafariViewController(url: url)
+                    // get the current scene
+                    let scenes = UIApplication.shared.connectedScenes
+                    // get the current scene as a UIWindowScene
+                    let windowScene = scenes.first as? UIWindowScene
+                    // get the first window of the scene which is the StartMenuView(?)
+                    let window = windowScene?.windows.first
+                    // let it present the SFSafariViewController
+                    window?.rootViewController?.present(safariVC, animated: true)
+                }
             }) {
                 VStack {
                     Image(systemName: "person.crop.circle.fill")
@@ -101,10 +86,9 @@ struct Buttons: View {
                         .foregroundColor(.gray)
                     Text("About Me")
                         .foregroundColor(.gray)
-                        .font(.title)
+                        .font(.largeTitle)
                 }
             }
-            */
             
         }//.navigationTitle("Hauptmenü")
     }
