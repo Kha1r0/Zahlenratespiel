@@ -66,7 +66,7 @@ struct Buttons: View {
             // About Me Button
             Button(action: {
                 // if url is a valid url
-                if let url = URL(string: "https://www.github.com/kha1r0" ) {
+                if let url = URL(string: Constants.GitHub) {
                     // make a safariViewController with the URL
                     let safariVC = SFSafariViewController(url: url)
                     // get the current scene
