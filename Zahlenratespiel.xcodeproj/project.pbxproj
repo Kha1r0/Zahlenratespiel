@@ -10,6 +10,7 @@
 		4288A64D2B73906900A3884A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4288A64C2B73906900A3884A /* SettingsView.swift */; };
 		4288A6512B73932900A3884A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4288A6502B73932900A3884A /* GameView.swift */; };
 		4288A6562B79797A00A3884A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4288A6552B79797A00A3884A /* Constants.swift */; };
+		4288A65A2B7AAAFE00A3884A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4288A6592B7AAAFE00A3884A /* Launch Screen.storyboard */; };
 		42BDD14F2B72F07000490A02 /* ZahlenratespielApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BDD14E2B72F07000490A02 /* ZahlenratespielApp.swift */; };
 		42BDD1532B72F07100490A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42BDD1522B72F07100490A02 /* Assets.xcassets */; };
 		42BDD1562B72F07100490A02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42BDD1552B72F07100490A02 /* Preview Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		4288A64C2B73906900A3884A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4288A6502B73932900A3884A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		4288A6552B79797A00A3884A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4288A6592B7AAAFE00A3884A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		42BDD14B2B72F07000490A02 /* Zahlenratespiel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zahlenratespiel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42BDD14E2B72F07000490A02 /* ZahlenratespielApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZahlenratespielApp.swift; sourceTree = "<group>"; };
 		42BDD1522B72F07100490A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 		42BDD1422B72F07000490A02 = {
 			isa = PBXGroup;
 			children = (
+				4288A6592B7AAAFE00A3884A /* Launch Screen.storyboard */,
 				42BDD14D2B72F07000490A02 /* Zahlenratespiel */,
 				42BDD14C2B72F07000490A02 /* Products */,
 			);
@@ -134,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4288A65A2B7AAAFE00A3884A /* Launch Screen.storyboard in Resources */,
 				42BDD1562B72F07100490A02 /* Preview Assets.xcassets in Resources */,
 				42BDD1532B72F07100490A02 /* Assets.xcassets in Resources */,
 			);
@@ -290,8 +294,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,8 +323,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
